@@ -1,4 +1,4 @@
-package com.fan.edu_service.entity;
+package com.fan.edu_service.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -9,52 +9,32 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 评论
- * @TableName edu_comment
+ * 课程科目
+ * @TableName edu_subject
  */
-@TableName(value ="edu_comment")
+@TableName(value ="edu_subject")
 @Data
-public class EduComment implements Serializable {
+public class EduSubject implements Serializable {
     /**
-     * 讲师ID
+     * 课程类别ID
      */
     @TableId
     private String id;
 
     /**
-     * 课程id
+     * 类别名称
      */
-    private String courseId;
+    private String title;
 
     /**
-     * 讲师id
+     * 父ID
      */
-    private String teacherId;
+    private String parentId;
 
     /**
-     * 会员id
+     * 排序字段
      */
-    private String memberId;
-
-    /**
-     * 会员昵称
-     */
-    private String nickname;
-
-    /**
-     * 会员头像
-     */
-    private String avatar;
-
-    /**
-     * 评论内容
-     */
-    private String content;
-
-    /**
-     * 逻辑删除 1（true）已删除， 0（false）未删除
-     */
-    private Byte isDeleted;
+    private Integer sort;
 
     /**
      * 创建时间

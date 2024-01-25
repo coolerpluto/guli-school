@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.fan.mapper.EduSubjectMapper">
+<mapper namespace="com.fan.edu_service.mapper.EduSubjectMapper">
 
-    <resultMap id="BaseResultMap" type="com.fan.edu_service.entity.EduSubject">
+    <resultMap id="BaseResultMap" type="com.fan.edu_service.domain.EduSubject">
             <id property="id" column="id" jdbcType="CHAR"/>
             <result property="title" column="title" jdbcType="VARCHAR"/>
             <result property="parentId" column="parent_id" jdbcType="CHAR"/>

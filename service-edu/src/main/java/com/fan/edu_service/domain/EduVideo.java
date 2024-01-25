@@ -1,4 +1,4 @@
-package com.fan.edu_service.entity;
+package com.fan.edu_service.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

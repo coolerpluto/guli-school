@@ -1,6 +1,6 @@
 package com.fan.edu_service.service;
 
-import com.fan.edu_service.entity.EduChapter;
+import com.fan.edu_service.domain.EduChapter;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
