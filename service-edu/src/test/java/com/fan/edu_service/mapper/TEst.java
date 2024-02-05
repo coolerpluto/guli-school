@@ -6,6 +6,7 @@ import com.fan.edu_service.domain.EduTeacher;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ConfigurableApplicationContext;
 
 import java.util.List;
 
@@ -29,4 +30,6 @@ public class TEst {
 //            System.out.println(eduTeacher);
 //        }
     }
+
+
 }

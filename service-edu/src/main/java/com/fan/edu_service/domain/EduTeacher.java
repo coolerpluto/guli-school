@@ -1,10 +1,10 @@
 package com.fan.edu_service.domain;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 import lombok.Data;
 
@@ -59,12 +59,14 @@ public class EduTeacher implements Serializable {
     /**
      * 创建时间
      */
-    private Date gmtCreate;
+    @TableField(fill = FieldFill.INSERT)
+    private LocalDateTime gmtCreate;
 
     /**
      * 更新时间
      */
-    private Date gmtModified;
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    private LocalDateTime gmtModified;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

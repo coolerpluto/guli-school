@@ -9,6 +9,10 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = "com.fan")
 public class ServiceEduApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ServiceEduApplication.class, args);
+        ConfigurableApplicationContext run = SpringApplication.run(ServiceEduApplication.class, args);
+        String[] beanDefinitionNames = run.getBeanDefinitionNames();
+//        for (String beanDefinitionName : beanDefinitionNames) {
+//            System.out.println(beanDefinitionName);
+//        }
     }
 }
